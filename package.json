@@ -1,0 +1,18 @@
+{
+  "name": "cpen391_module1",
+  "version": "1.0.0",
+  "description": "Module 1 backend and frontend for Cpen 391",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shafi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "mongoose": "^5.8.11",
+    "request": "^2.88.0"
+  }
+}

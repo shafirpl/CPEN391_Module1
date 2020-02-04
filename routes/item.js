@@ -14,7 +14,6 @@ router.get('/:id', async (req,res) => {
         return res.status(500).send("Database issue");
     }
    
-    return res.send("hello");
 });
 
 router.post('/new',async (req,res)=>{

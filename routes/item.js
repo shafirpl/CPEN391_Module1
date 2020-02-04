@@ -8,6 +8,9 @@ router.get('/:id', async (req,res) => {
          if (item) {
            return res.json(item);
          }
+         else {
+             return res.status(404).send("Item doesn't exist");
+         }
         
     } catch (error) {
         console.error(error.message);

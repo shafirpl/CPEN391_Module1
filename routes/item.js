@@ -2,6 +2,17 @@ const express = require('express');
 const router = express.Router();
 const Item = require('../models/itemSchema');
 
+router.get('/all', async (req,res) => {
+    let allItems;
+    try {
+        allItems = await Item.find({});
+        return res.send(allItems);
+    } catch (error) {
+        console.error(error.message);
+        return res.status(500).send("Database Issue");
+    }
+});
+
 router.get('/:id', async (req,res) => {
     try {
          let item = await Item.findOne({ barcodeId: req.params.id });

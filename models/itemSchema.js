@@ -5,7 +5,7 @@ const itemSchema = new mongoose.Schema({
   barcodeId:{
     type: String,
     required: true,
-    unique: true,
+    unique: true
   },
   name: {
     type: String,
